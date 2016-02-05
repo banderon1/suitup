@@ -19,6 +19,7 @@
           'address': address
         }, function (results, status) {
           if (status == google.maps.GeocoderStatus.OK) {
+            console.log(results[0].geometry.location);
             $("#map").gmap3({
               map: {
                 options: {

@@ -636,7 +636,7 @@ fieldset[disabled] .btn-link:focus {
 *** counter ***
 ************************************************/
 .counter {
-  padding: 60px 0;
+  padding: 5px 0;
   background-color: #ffffff;
   color: #555555;
   border-bottom: 1px solid #eeeeee;
@@ -647,11 +647,11 @@ fieldset[disabled] .btn-link:focus {
   position: relative;
 }
 .counter .count-digits p {
-  margin: 0 auto 15px;
+  margin: 0 auto 0px;
   font-size: 36px;
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
   border-radius: 50%;
   border: 1px solid #999999;
   font-weight: 300;
@@ -662,6 +662,12 @@ fieldset[disabled] .btn-link:focus {
 }
 .counter .btn-empty-inverse {
   min-width: 60px;
+}
+.counter h1 {
+  margin: 0;
+}
+.counter .lead {
+  margin-bottom: 10px;
 }
 /************************************************
 *** schedule ***
@@ -1118,6 +1124,9 @@ fieldset[disabled] .btn-link:focus {
 .map {
   position: relative;
 }
+.map .container-fluid {
+  margin-bottom: 100px
+}
 #map {
   height: 740px;
 }
@@ -1171,7 +1180,7 @@ fieldset[disabled] .btn-link:focus {
 *** main footer ***
 ************************************************/
 .main-footer {
-  padding: 30px 0;
+  padding: 10px 0;
   color: #ffffff;
   background-color: #555555;
 }
