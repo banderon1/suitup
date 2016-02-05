@@ -1125,7 +1125,7 @@ fieldset[disabled] .btn-link:focus {
   position: relative;
 }
 .map .container-fluid {
-  margin-bottom: 100px
+  margin-bottom: 60px
 }
 #map {
   height: 740px;
@@ -1185,7 +1185,7 @@ fieldset[disabled] .btn-link:focus {
   background-color: #555555;
 }
 .main-footer .social ul {
-  margin: 0 0 20px;
+  margin: 0;
 }
 .main-footer .social li {
   text-align: center;
