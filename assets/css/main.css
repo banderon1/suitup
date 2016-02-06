@@ -106,7 +106,7 @@
 }
 .navbar-brand {
   float: left;
-  padding: 20px 15px;
+  padding: 0;
   font-size: 18px;
   line-height: 20px;
   height: 60px;
