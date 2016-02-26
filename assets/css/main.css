@@ -538,6 +538,14 @@ fieldset[disabled] .btn-link:focus {
   background-position: center center;
   margin-top: 61px;
   position: relative;
+  background-image:url(../img/header.png);
+  height:300px;
+}
+@media (max-width: 650px) {
+  .promo {
+    background-image:url(../img/header-small.png);
+    height:200px;
+  }
 }
 .promo .color-correction {
   position: absolute;
