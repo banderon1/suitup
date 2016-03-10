@@ -1054,10 +1054,10 @@ fieldset[disabled] .btn-link:focus {
   margin-bottom: 60px
 }
 #map {
-  height: 740px;
+  height: 370px;
 }
 .street-view {
-  height: 250px;
+  height: 150px;
 }
 /************************************************
 *** location ***
@@ -1065,7 +1065,7 @@ fieldset[disabled] .btn-link:focus {
 .location {
   position: absolute;
   z-index: 100px;
-  bottom: 20px;
+  bottom: 130px;
   width: 100%;
 }
 .location .popover {

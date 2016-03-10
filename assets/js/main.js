@@ -12,55 +12,21 @@
     }
     // A jQuery plugin to create and manage Google Maps to jQuery
     function googleMap() {
-      var ourAddress = $("#ourLocation").data("location") || "earth";
-      function getLatLong(address) {
-        var geo = new google.maps.Geocoder;
-        geo.geocode({
-          'address': address
-        }, function (results, status) {
-          if (status == google.maps.GeocoderStatus.OK) {
-            console.log(results[0].geometry.location);
-            $("#map").gmap3({
-              map: {
-                options: {
-                  maxZoom: 14,
-                  streetViewControl: true,
-                  panControl: true,
-                  panControlOptions: {
-                    position: google.maps.ControlPosition.RIGHT_CENTER
-                  },
-                  zoomControl: true,
-                  zoomControlOptions: {
-                    style: google.maps.ZoomControlStyle.LARGE,
-                    position: google.maps.ControlPosition.LEFT_CENTER
-                  },
-                  mapTypeControl: true,
-                  scrollwheel: false,
-                  disableDoubleClickZoom: true
-                }
-              },
-              streetviewpanorama: {
-                options: {
-                  container: $("#streetView"),
-                  opts: {
-                    position: results[0].geometry.location,
-                    pov: {
-                      heading: 34,
-                      pitch: 10,
-                      zoom: 0
-                    }
-                  }
-                }
-              }
-            }, "autofit");
-          } else {
-            alert("Geocode was not successful for the following reason: " + status);
-          }
-        })
-      }
-      if ($.fn.gmap3) {
-        getLatLong(ourAddress)
-      }
+      var mapPoint = {lat: 34.2835, lng: -119.2486};
+      var streetViewPoint = {lat: 34.2766252, lng: -119.2486};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: mapPoint,
+        zoom: 14
+      });
+      var panorama = new google.maps.StreetViewPanorama(
+          document.getElementById('streetView'), {
+            position: streetViewPoint,
+            pov: {
+              heading: 34,
+              pitch: 10
+            }
+          });
+      map.setStreetView(panorama);
     }
     // A custom select for Bootstrap using button dropdown
     function selectpicker() {
