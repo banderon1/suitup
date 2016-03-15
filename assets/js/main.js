@@ -18,14 +18,13 @@
         center: mapPoint,
         zoom: 14
       });
-      var panorama = new google.maps.StreetViewPanorama(
-          document.getElementById('streetView'), {
-            position: streetViewPoint,
-            pov: {
-              heading: 34,
-              pitch: 10
-            }
-          });
+      var panorama = new google.maps.StreetViewPanorama(document.getElementById('streetView'), {
+        position: streetViewPoint,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
       map.setStreetView(panorama);
     }
     // A custom select for Bootstrap using button dropdown
