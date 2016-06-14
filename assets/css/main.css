@@ -793,6 +793,57 @@ fieldset[disabled] .btn-link:focus {
   border-top-color: #555555;
 }
 /************************************************
+*** faq ***
+************************************************/
+.faq {
+  padding: 60px 0;
+}
+.faq .section-heading {
+  text-align: center;
+}
+.faq .section-heading h1 {
+  margin-top: 0;
+}
+.faq .faq-question {
+  font-size: 18px;
+}
+.faq .faq-answer {
+  font-size: 14px;
+}
+.faq .qa {
+  border-bottom: 1px solid #111;
+  margin-bottom: 10px;
+}
+/************************************************
+*** contacts ***
+************************************************/
+.contacts {
+  padding: 60px 0;
+}
+.contacts .section-heading {
+  text-align: center;
+}
+.contacts .section-heading h1 {
+  margin-top: 0;
+}
+.contacts .row{
+  margin-bottom: 10px;
+}
+.contact .glyphicon {
+  margin-right: 5px;
+}
+.contact .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.contact .name {
+  font-size: 18px;
+}
+.contact .email,
+.contact .phone {
+  font-size: 14px;
+}
+/************************************************
 *** speakers ***
 ************************************************/
 .speakers {
